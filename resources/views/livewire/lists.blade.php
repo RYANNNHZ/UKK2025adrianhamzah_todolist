@@ -1,16 +1,4 @@
 <div>
-    <div class="container-fluid">
-        <div class="col-md-4">
-            <div class="card border-0">
-                <div class="card-header bg-white py-3">
-                    <h6 class="mb-0">Form Create</h6>
-                </div>
-                <div class="card-body">
-                    <livewire:list-create />
-                </div>
-            </div>
-        </div>
-        <div class="container">
             <div class="row my-3">
 
                 @if (session()->has('success'))
@@ -41,7 +29,4 @@
                     <h1 class="fs-1 text-center">don't forget to list ur task 🙌</h1>
                 @endforelse
             </div>
-        </div>
-    </div>
-
 </div>

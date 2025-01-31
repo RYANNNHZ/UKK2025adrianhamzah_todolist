@@ -2,8 +2,8 @@
 
 namespace App\Livewire;
 
-use App\Models\lists as ModelsLists;
 use Livewire\Component;
+use App\Models\lists as ModelsLists;
 
 
 class Lists extends Component
@@ -19,6 +19,6 @@ class Lists extends Component
     public function render()
     {
         $lists = ModelsLists::all();
-        return view('livewire.lists', compact('lists'))->extends('layouts.app');
+        return view('livewire.lists', compact('lists'));
     }
 }
