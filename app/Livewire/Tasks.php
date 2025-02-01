@@ -10,7 +10,7 @@ class Tasks extends Component
 {
     public function render()
     {
-        return view('livewire.tasks')->extends('layouts.app');  // Gunakan layout 'home' atau layout yang sesuai
+        return view('livewire.tasks');  // Gunakan layout 'home' atau layout yang sesuai
     }
 
 }

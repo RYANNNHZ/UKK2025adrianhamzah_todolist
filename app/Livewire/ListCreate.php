@@ -13,7 +13,7 @@ class ListCreate extends Component
 
     public function store(){
         lists::create([
-            'user_id' => '6a3ba90c-dfa8-11ef-aaee-d4258b67b763',
+            'user_id' => '927b62d4-d93a-11ef-be28-408d5c651cf1',
             'title' => $this->title,
             'description' => $this->description,
             'status' => 'pending'
@@ -27,6 +27,6 @@ class ListCreate extends Component
 
     public function render()
     {
-        return view('livewire.list-create')->extends('layouts.app');
+        return view('livewire.list-create');
     }
 }

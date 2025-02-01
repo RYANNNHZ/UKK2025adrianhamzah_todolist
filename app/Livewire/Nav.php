@@ -18,6 +18,6 @@ class Nav extends Component
 
     public function render()
     {
-        return view('livewire.nav')->extends('layouts.app');
+        return view('livewire.nav');
     }
 }

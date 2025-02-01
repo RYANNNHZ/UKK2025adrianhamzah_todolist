@@ -1,4 +1,5 @@
 <div>
+
             <div class="row my-3">
 
                 @if (session()->has('success'))
@@ -8,7 +9,7 @@
                 @endif
 
                 @forelse ($lists as $list)
-                    <div class="col-12 col-lg-4 col-md-3 my-2">
+                    <div class="col-12 col-lg-4 col-md-3 my-2" >
                         <div class="card text-dark">
                             <div class="card-body">
                                 <h4 class="card-title">{{ $list->title }}</h4>
