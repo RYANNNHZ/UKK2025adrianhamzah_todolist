@@ -20,7 +20,7 @@
             <div class="mb-3">
 
             </div>
-            <livewire:tasks />
+            {{-- <livewire:tasks /> --}}
         </div>
         <div class="modal-footer">
             <button type="submit" class="btn" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-check" style="width: 1.5em"></i></button>

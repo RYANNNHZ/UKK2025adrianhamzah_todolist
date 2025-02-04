@@ -18,7 +18,7 @@ class Lists extends Component
 
     public function render()
     {
-        $lists = ModelsLists::orderBy('title', 'desc')->get();
+        $lists = ModelsLists::all();
         return view('livewire.lists', compact('lists'));
     }
 }
