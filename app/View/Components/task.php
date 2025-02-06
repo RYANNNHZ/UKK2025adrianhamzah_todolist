@@ -6,15 +6,15 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class navbar extends Component
+class task extends Component
 {
     /**
      * Create a new component instance.
      */
-    public $title;
-    public function __construct($title)
+    public $status;
+    public function __construct($status)
     {
-        $this->title = $title;
+        return $this->status = $status;
     }
 
     /**
@@ -22,6 +22,6 @@ class navbar extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.navbar.navbar');
+        return view('components.task');
     }
 }

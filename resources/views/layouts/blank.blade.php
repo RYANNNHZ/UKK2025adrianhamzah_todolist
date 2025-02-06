@@ -14,19 +14,9 @@
         @livewireStyles
     </head>
     <body>
-        <div class="d-flex" id="wrapper">
-            <!-- Sidebar-->
-            <x-sidebar.sidebar></x-sidebar>
-            <!-- Page content wrapper-->
-            <div id="page-content-wrapper">
-                <!-- Top navigation-->
-                <x-navbar title="{{ $title }}" ></x-navbar>
-                <!-- Page content-->
-                <div class="container-fluid">
-                    {{$slot}}
-                </div>
-            </div>
-        </div>
+
+                @yield('content')
+
         @livewireScripts
         @stack('scripts')
         <!-- Bootstrap core JS-->

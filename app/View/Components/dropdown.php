@@ -6,15 +6,14 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class navbar extends Component
+class dropdown extends Component
 {
     /**
      * Create a new component instance.
      */
-    public $title;
-    public function __construct($title)
+    public function __construct()
     {
-        $this->title = $title;
+        //
     }
 
     /**
@@ -22,6 +21,6 @@ class navbar extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.navbar.navbar');
+        return view('components.navbar.partials.dropdown');
     }
 }

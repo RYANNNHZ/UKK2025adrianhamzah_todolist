@@ -1,5 +1,8 @@
 <?php
 
+use App\Livewire\Auth\Login;
+use App\Livewire\Auth\Register;
+use App\Livewire\Detaillist;
 use App\Livewire\Home;
 use App\Livewire\Lists;
 use App\Livewire\Tasks;
@@ -11,6 +14,8 @@ Route::get('/',function(){
     return redirect('/lists');
 });
 Route::get('/lists', Lists::class);
-Route::get('/tasks', Tasks::class);
 Route::get('/listcreate',ListCreate::class);
 Route::get('/profile',Profile::class);
+Route::get('/detaillist/{id}',Detaillist::class);
+Route::get('/halamanlogin',Login::class);
+Route::get('/halamanregister',Register::class);
