@@ -2,6 +2,8 @@
 
 namespace App\View\Components;
 
+use App\Models\task as ModelsTask;
+use App\Models\taskTags;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
@@ -12,9 +14,11 @@ class task extends Component
      * Create a new component instance.
      */
     public $status;
-    public function __construct($status)
+    public $id;
+    public function __construct($status,$id)
     {
         return $this->status = $status;
+        return $this->id = $id;
     }
 
     /**
